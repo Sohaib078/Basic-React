@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ToDo from "./pages/ToDo";
 import Navbar from "./UI/Navbar";
-import Weather from "./UI/Weather";
+import Weather from "./pages/Weather";
 
 const App = () => {
   return (

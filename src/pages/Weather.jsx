@@ -11,7 +11,7 @@ const Weather = () => {
 
       const resJson = await response.json();
       setCity(resJson);
-      //   console.log(city);
+      //   console.log(city?.weather[0].description);
     };
     fetchApi();
   }, [search]);
@@ -42,6 +42,9 @@ const Weather = () => {
                 <p className="font-semibold text-white">{city?.main?.temp}</p>
                 <p className="text-base text-white">
                   Min : {city?.main?.temp_min} | Max : {city?.main?.temp_max}
+                </p>
+                <p className="text-white text-base">
+                  {city && <p> {city?.weather?.at(0)?.description}</p>}
                 </p>
               </div>
             </div>
