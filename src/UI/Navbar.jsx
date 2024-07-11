@@ -11,6 +11,9 @@ const Navbar = () => {
           <li>
             <NavLink to={"/Weather"}>Weather </NavLink>
           </li>
+          <li>
+            <NavLink to={"/Form"}>Form </NavLink>
+          </li>
         </ul>
       </div>
     </div>
