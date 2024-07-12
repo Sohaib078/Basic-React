@@ -36,7 +36,7 @@ const Weather = () => {
             </p>
           ) : (
             <div className=" py-32 text-3xl flex justify-center gap-2">
-              <FaStreetView className="text-center" />
+              <FaStreetView className="text-center text-white" />
               <div>
                 <p className="font-bold text-white">{search}</p>
                 <p className="font-semibold text-white">{city?.main?.temp}</p>

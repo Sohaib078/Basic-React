@@ -14,7 +14,7 @@ const Form = () => {
       validationSchema: signUpSchema,
       onSubmit: (values, action) => {
         console.log(values);
-        action.resetForm();
+        action.resetForm(action);
       },
     });
   console.log(errors);
